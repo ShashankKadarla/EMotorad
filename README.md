@@ -128,23 +128,23 @@ The system returns a JSON response containing:
 }
 ```
 
-#### Request 2:
+#### Request 3:
 ```json
-{ "email": "bob@example.com", "phoneNumber": "9876543210" }
+{ "email": "ram@example.com", "phoneNumber": "9876543210" }
 ```
 #### Response:
 ```json
 {
   "contact": {
     "primaryContactId": 1,
-    "emails": ["alice@example.com", "bob@example.com"],
+    "emails": ["shashank@example.com", "ram@example.com"],
     "phoneNumbers": ["1234567890", "9876543210"],
     "secondaryContactIds": [2, 3]
   }
 }
 ```
 
-#### Request 3:
+#### Request 4:
 ```json
 { "email": "charlie@example.com", "phoneNumber": "5555555555" }
 ```
@@ -153,7 +153,7 @@ The system returns a JSON response containing:
 {
   "contact": {
     "primaryContactId": 1,
-    "emails": ["alice@example.com", "bob@example.com", "charlie@example.com"],
+    "emails": ["shashank@example.com", "ram@example.com", "charlie@example.com"],
     "phoneNumbers": ["1234567890", "9876543210", "5555555555"],
     "secondaryContactIds": [2, 3, 4]
   }
