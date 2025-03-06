@@ -1,0 +1,26 @@
+{
+  "name": "contact-management",
+  "version": "1.0.0",
+  "description": "A contact management system with TypeORM and Express",
+  "main": "server.ts",
+  "scripts": {
+    "generate": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -d src/data-source.ts ./src/migrations/migrationfile",
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "run-migrations": "ts-node ./node_modules/typeorm/cli.js migration:run -d src/data-source.ts",
+    "revert-migrations": "ts-node ./node_modules/typeorm/cli.js migration:revert -d src/data-source.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "tsconfig-paths": "^4.2.0",
+    "typeorm": "^0.3.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
